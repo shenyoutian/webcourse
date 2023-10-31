@@ -16,7 +16,7 @@ h2 {
   font-size:           1.3em;
 }
 
-#guarantee {
+.guarantee {
   line-height:         1.9em;
   font-style:          italic;
   font-family:         Georgia, "Times New Roman", Times, serif;
@@ -27,6 +27,8 @@ h2 {
   background-color:    #a7cece;
   padding:             25px;
   margin:              30px;
+  line-height:         1.9em;
+  font-style:          italic;
 /*
   padding-left:        80px;
   margin-right:        250px;

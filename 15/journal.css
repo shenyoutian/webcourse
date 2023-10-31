@@ -25,3 +25,8 @@ font-style: italic;
 h1,h2 {
 border-bottom: thin dotted #888888;
 }
+
+*{
+padding: 0px;
+margin: 0px;
+}
