@@ -24,14 +24,28 @@ h2 {
   border-color:        white;
   border-width:        1px;
   border-style:        dashed;
-  background-color:    #a7cece;
+  border-radius:       15px;
   padding:             25px;
-  margin:              30px;
-/*
   padding-left:        80px;
+  margin:              30px;
   margin-right:        250px;
+  background-color:    #a7cece;
   background-image:    url(images/background.gif);
   background-repeat:   no-repeat;
   background-position: top left;
-*/
+}
+
+p {
+  border-color:        white;
+  border-width:        1px;
+  border-style:        dashed;
+  border-top-right-radius:   2em;
+  border-bottom-left-radius: 2em;}
+
+.yuan {
+ width: 500px; 
+ height: 500px; 
+ border-radius: 250px;
+ border-style: solid;
+ background-color: #444444;
 }
