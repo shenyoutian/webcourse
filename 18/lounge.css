@@ -1,7 +1,5 @@
 body {
-  font-size:           small;
-  font-family:         Verdana, Helvetica, Arial;
-  line-height:         1.6em;
+  font:                small/1.6em Verdana, Helvetica, Arial;
 }
 
 h1, h2 {
@@ -21,32 +19,29 @@ h2 {
   font-style:          italic;
   font-family:         Georgia, "Times New Roman", Times, serif;
   color:               #444444;
-  border-color:        white;
-  border-width:        1px;
-  border-style:        dashed;
+  border:              1px dashed white;
   border-radius:       15px;
   padding:             25px;
   padding-left:        80px;
   margin:              30px;
   margin-right:        250px;
   background-color:    #a7cece;
-  background-image:    url(images/background.gif);
-  background-repeat:   no-repeat;
+  background:          url(images/background.gif) no-repeat;
   background-position: top left;
 }
 
 p {
-  border-color:        white;
-  border-width:        1px;
-  border-style:        dashed;
+  border-color:              white;
+  border-width:              1px;
+  border-style:              dashed;
   border-top-right-radius:   2em;
   border-bottom-left-radius: 2em;}
 
 .yuan {
-  width: 500px; 
-  height: 500px; 
-  border-radius: 250px;
-  border-style: solid;
+  width:             500px; 
+  height:            500px; 
+  border-radius:     250px;
+  border-style:      solid;
   background-color: #444444;
 }
 
@@ -59,9 +54,8 @@ p {
   padding-bottom:    20px;
   padding-left:      20px;
   margin-left:       20px;
-  background-image:  url(images/cocktail.gif);
-  background-repeat:  repeat-x;
-  text-align:         center;
+  background:        url(images/cocktail.gif) repeat-x;
+  text-align:        center;
 }
 
 .elixirs h2{
@@ -73,5 +67,32 @@ p {
 }
 
 .elixirs{
-  line-height:         1em;
+  line-height:         1;
+}
+
+.footer{
+  font-size:           .5em;
+  text-align:          center;
+  line-height:         normal;
+  margin-top:          30px;
+}
+
+.cd{
+  font-style:          italic;}
+
+.artist{
+  font-weight:         bold;
+}
+
+.elixirs a:link {
+  color: #007e7e;
+}
+
+.elixirs a:visited {
+  color: #333333;
+}
+
+.elixirs a:hover {
+  background: #f88396;
+  color: #0d5353;
 }
