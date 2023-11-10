@@ -56,7 +56,7 @@ p {
   margin-left:       20px;
   background:        url(images/cocktail.gif) repeat-x;
   text-align:        center;
-  float: right;
+  float:             right;
 }
 
 .elixirs h2{
