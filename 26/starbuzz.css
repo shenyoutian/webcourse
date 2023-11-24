@@ -7,8 +7,8 @@ body {
 
 .header {
   background-color: #675c47;
-  margin:           10px;
   height:           108px;
+  border-spacing:   10px;
 }
 
 .main {
@@ -34,7 +34,7 @@ body {
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  margin:           10px;
+  border-spacing:   10px;
   font-size:        90%;
 }
 
@@ -68,4 +68,10 @@ div.tableContainer {
 
 div.talbeRow {
   display: table-row;
+}
+
+.drinks {
+    display: table-cell;
+    background-color: #efe5d0;
+    padding: 15px;
 }
