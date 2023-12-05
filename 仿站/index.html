@@ -4,36 +4,135 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Site officiel du musée du Louvre</title>
-  <link rel="icon" href="images/favicon-16x16.png"
+  <link rel="icon" href="images/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="louvre.css">
 </head>
 <body>
-  <nav class="Header">
-    <header class="Header_top">
-      <div>
+<header class="Header">
+    <div class="Header_top">
+      <nav role="navigation" aria-label="Tout le Louvre">
         <button type="button" class="menu">
-          <svg class="menu_svg" viewBox="0 0 32 32" width="1em" height="1em" focusable="false" aria-hidden="true">
-            <path d="M20.5 9a5.5 5.5 0 0 1 4.4 8.8l4.63 4.67-1.06 1.06-4.63-4.66A5.5 5.5 0 1 1 20.5 9zM16 21v1.5H2V21h14zm4.5-10.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm-7.94 5V17H2v-1.5h10.56zM14.2 10v1.5H2V10h12.19z"></path>
+          <svg viewBox="0 0 32 32" width="1em" height="1em" focusable="fales" aria-hidden="true" class="menu_icon Svg">
+          <path d="M20.5 9a5.5 5.5 0 0 1 4.4 8.8l4.63 4.67-1.06 1.06-4.63-4.66A5.5 5.5 0 1 1 20.5 9zM16 21v1.5H2V21h14zm4.5-10.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm-7.94 5V17H2v-1.5h10.56zM14.2 10v1.5H2V10h12.19z"></path>
           </svg>
-          <span class="sr-only">Menu</span>
+          <span class="menu_text">Menu</sapn>
         </button>
-      </div>
-    <div class="Header_langues">
-      <div class="popover">
-        <button class="popover_button" type="button">Français<svg class="popover_svg" viewBox="0 0 16 16" width="1em" height="1em" focusable="false" aria-hidden="true">
-        <path d="M8.13 10.75 3.75 6.37l.88-.87L8.13 9l3.5-3.5.87.88z"></path>
-        </svg>
+      </nav>
+      <div class="Header_langues">
+        <div class="popover" aria-hidden="false">
+          <button type="button" class="popover_button" aria-expanded="false">
+          Français
+          <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="fales" aria-hidden="true" class="popover_chevron Svg">
+          <path d="M8.13 10.75 3.75 6.37l.88-.87L8.13 9l3.5-3.5.87.88z"></path>
+          </svg>
         </button>
+        <div class="popover_expand popover_left" aria-hidden="true">
+          <p class="popover_label robot-p-12">Langues</p>
+          <ul>
+            <il class="popover_item">
+                <a tabindex="-1" class="popover_Item" lang="en" href="/en">English</a>
+            <li>
+            <il class="popover_item">
+                <a tabindex="-1" class="popover_Item popover_Item_current" lang="fr" aria-current="ture" href="/">Français</a>
+            <li>
+            <il class="popover_item">
+                <a tabindex="-1" class="popover_Item" lang="es" href="/es">Español</a>
+            <li>
+            <il class="popover_item">
+                <a tabindex="-1" class="popover_Item" lang="zh-hans" href="/zh-hans">中文</a>
+            <li>
+          </ul> 
+        </div>
+        </div>
       </div>
-    
-    
-    
+      <div class="Header_home">
+        <h1 class="Header_Home">
+            <a class="Header_Home_link" style="--ratio:5.230769230769231" href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 26" focusable="false" aria-hidden="true" class="Header_Home_loge">
+                <use href="#loge"></use>
+              </svg>
+              <span class="sr-only">Louvre - Page d'accueil</span>
+            </a>
+        </h1>
+      </div>
+      <ul class="Header_links">
+        <li>
+          <a rel="noopener" href="#" style="--color:#000;--color-hover:#1a1a1a" class="Bouton Header_Boutique Bouton_size-small Bouton_width-fixed Bouton_fill-full Bouton_dark Bouton_colored">
+            <span class="Bouton_content">
+                <span class="Bouton_icon Bouton_left">
+                  <svg viewBox="0 0 24 24" width="1em" height="1em" focusable="false" aria-hidden="true" class="Svg">
+                      <path d="M11.57 2c-1.78 0-3.2 1.28-3.2 2.86V7H5.14a.71.71 0 0 0-.72.64L3 21.21a.72.72 0 0 0 .72.79h15.71a.71.71 0 0 0 .72-.79L18.72 7.64A.71.71 0 0 0 18 7h-3.22V4.86c0-1.58-1.43-2.86-3.21-2.86zM9.8 4.86c0-.8.8-1.43 1.78-1.43 1 0 1.8.64 1.8 1.43V7h-3.6V4.86zm7.57 3.57 1.28 12.14H4.51L5.79 8.43h2.57v1.43a.71.71 0 1 0 1.43 0V8.43h3.57v1.43a.71.71 0 1 0 1.43 0V8.43h2.57z">
+                      </path>
+                  </svg>
+                </sapn>
+                <span class="Bouton_nobreak">&nbsp;
+                </span>
+                <span class="Bouton_label">E-Boutique
+                </span>
+            </span>
+          </a>
+        </li>
+          <a rel="noopener" href="#" style="--color:#008573;--color-hover:#0a4f51" class="Bouton Bouton_size-small Bouton_width-fixed Bouton_fill-full Bouton_dark Bouton_colored">
+            <span class="Bouton_content">
+                <span class="Bouton_icon bouton_left">
+                  <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" aria-hidden="true" class="Svg">
+                    <path d="M9.13.5a.9.9 0 0 1 1.28 0l1.17 1.18c.2.2.3.5.25.79a1.48 1.48 0 0 0 1.7 1.7c.3-.04.59.05.79.25l1.17 1.17a.9.9 0 0 1 0 1.28L6.87 15.5a.9.9 0 0 1-1.28 0L.51 10.41a.9.9 0 0 1 0-1.28zm.64.78L1.28 9.77l4.95 4.95 8.49-8.49-1.1-1.1c-.74.15-1.52-.1-2.08-.67s-.82-1.34-.7-2.14L9.77 1.28zm.53 5.13c.1-.1.25-.1.35 0l.35.35c.1.1.1.26 0 .36l-4.59 4.6a.27.27 0 0 1-.36 0l-.35-.36a.25.25 0 0 1 0-.36l4.6-4.59zm-2.24-.59c.1-.1.26-.1.35 0l.36.35c.1.1.1.26 0 .36L5 10.3c-.1.1-.26.1-.36 0l-.35-.35a.25.25 0 0 1 0-.36l3.77-3.77z">
+                    </path>
+                  </svg>
+                </span>
+                <span class="Bouton_nobreak">&nbsp;
+                </span>
+                <span class="Bouton_label">Billetterie
+                </span>
+            </span>
+          </a>
+        <li>
+        </li>
+      </ul>
     </div>
-    
-    
-    
-    </header>
-  
-  
-  </nav>
+    <nav role="navigation" aria-label="principal" class="Header_Navigation_nav montserrat-18">
+      <div class="HorizontalList">
+        <div class="HorizontalList_scrollcontainer HorizontalList_center">
+          <ul class="HorizontalList_track">
+            <li class="HorizontalList_item">
+                <a class="Header_Navigation_link Header_Navigation_first" href="#">
+                    <span class="Header_Navigation_text">
+                      Visiter
+                    </span>
+                </a>
+            </li>
+            <li class="HorizontalList_item">
+                <a class="Header_Navigation_link" href="#">
+                  <span class="Header_Navigation_text">
+                      Découvrir
+                  </span>
+                </a>
+            </li>
+            <li class="HorizontalList_item">
+                <a class="Header_Navigation_link" href="#">
+                  <span class="Header_Navigation_text">
+                    En ce moment
+                  </span>
+                </a>
+            </li>
+          </ul>
+        </div>
+        <div class="HorizontalList_controls HorizontalList_min">
+          <button type="button" class="HorizontalList_prev" aria-hidden="true" tabindex="-1" disabled style="user-select: none;">
+            <svg viewBox="0 0 24 24" width="1em" height="1em" focusable="false" aria-hidden="ture" class="Svg">
+              <path d="m7.22 12.28 7.5-7.5 1.05 1.04-6.45 6.45 6.45 6.45-1.05 1.05z"></path>
+            </svg>
+            <span class="sr-only">previous navigation element</span>
+          </button>
+          <button type="button" class="HorizontalList_next" style="user-select: none;">
+            <svg viewBox="0 0 24 24" width="1em" height="1em" focusable="false" aria-hidden="true" class="Svg">
+            <path d="m16.77 12.28-7.5 7.5-1.05-1.06 6.45-6.45-6.45-6.45 1.05-1.05z"></path>
+            </svg>
+            <span class="sr-only">next navigation item</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
 </body>
 </html>
