@@ -540,8 +540,21 @@ div{
     transform: translateX(8px)
 }
 
+.Bouton_colored {
+    background-color: var(--color);
+}
+
+.Bouton_colored.Bouton_fill-full.Bouton_hover,.Bouton_colored.Bouton_fill-full:focus,.Bouton_colored.Bouton_fill-full:hover{
+    background-color: var(--color-hover);
+}
+
 .louvre{
     font: 400 50px/1.24 LouvreSerif,Georgia,Times New Roman,serif;
+}
+
+.popover_button:focus, .popover_button:hover {
+    text-decoration: underline;
+    transition-duration: 0ms;
 }
 
 * {
@@ -691,6 +704,7 @@ video {
     text-rendering: optimizeLegibility;
     font: 400 58px/1.24 LouvreSerif,Georgia,Times New Roman,serif;
     text-transform: uppercase;
+    margin-right: 40%;
 }
 
 h2 {
@@ -994,3 +1008,67 @@ svg:not(:root) {
     width: 1px!important;
     white-space: nowrap!important;
 }
+
+.Image{
+    background-color: var(--preview,#000);
+    pointer-events: none;
+}
+
+.cover, .extended-click:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.Bouton_width-variable.Bouton_size-big:after, .Bouton_width-variable.Bouton_size-big:before {
+    flex-basis: 32px;
+    width: 32px;
+}
+
+.Bouton_width-variable:after, .Bouton_width-variable:before {
+    content: "";
+    flex: 0 1000000 16px;
+}
+
+.Bouton_size-big {
+    font: 400 16px/1.56 Roboto,Open Sans,Arial,Helvetica,sans-serif;
+    border-radius: calc(16px + 1em * 1.56);
+}
+
+.OpeningStatusIndicator_open:after, .OpeningStatusIndicator_open:before {
+    background-color: #51c200;
+}
+
+.OpeningStatusIndicator_indicator:before {
+    opacity: .4;
+    height: 1em;
+    width: 1em;
+}
+
+.OpeningStatusIndicator_indicator:after, .OpeningStatusIndicator_indicator:before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    transition: background-color .15s;
+}
+
+.OpeningStatusIndicator_indicator:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: .5em;
+    width: .5em;
+    transform: translate(-50%,-50%);
+}
+
