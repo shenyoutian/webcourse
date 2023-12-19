@@ -557,10 +557,6 @@ div{
     transition-duration: 0ms;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 main {
     display: block;
 }
@@ -584,22 +580,6 @@ button {
 
 .Ecrin_white {
     color: #000;
-}
-
-body {
-    --scrollbar-width: 15px;
-    --hundred-vw: calc(100vw - var(--scrollbar-width, 0px));
-    --hundred-vh: 750.4000244140625px;
-    --layout-padding: 0px;
-    --grid-gap: 16px;
-    --inner-width: calc(var(--hundred-vw) - 80px);
-    --column-count: 12;
-    --column-unit: calc((var(--inner-width) + var(--grid-gap)) / var(--column-count));
-    --body-padding: 40px;
-    overflow-y: scroll;
-    font: 400 14px/1.57 Roboto,Open Sans,Arial,Helvetica,sans-serif;
-    background-color: #000;
-    overflow-wrap: break-word;
 }
 
 .Ecrin_white:before {
@@ -718,15 +698,6 @@ h2 {
 
 .HomeCover_bottom, .HomeCover_ctaContainer {
     margin-top: 32px;
-}
-
-p {
-    margin: 0;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 .Bouton_width-variable {
@@ -861,10 +832,6 @@ svg:not(:root) {
     display: block;
     border-radius: 50%;
     transition: background-color .15s;
-}
-
-.OpeningStatusIndicator_closed:after, .OpeningStatusIndicator_closed:before {
-    background-color: #da3a3a;
 }
 
 .OpeningStatusIndicator_indicator:after {
@@ -1071,4 +1038,3 @@ img{
     width: .5em;
     transform: translate(-50%,-50%);
 }
-
